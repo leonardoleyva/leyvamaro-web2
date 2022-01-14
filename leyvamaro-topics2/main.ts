@@ -141,10 +141,6 @@ interface Perro2 {
 const miPerro: Perro2 = { raza: "Pug" };
 console.log(`La raza de mi perro es ${miPerro.raza}`);
 
-/* 
-    Es importante resaltar que aunque las propiedades no se puedan modificar
-    pueden ser alteradas mediante el uso de un alias. Como el siguiente ejemplo:
-*/
 interface Persona {
   edad: number;
 }

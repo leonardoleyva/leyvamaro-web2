@@ -31,7 +31,6 @@ if (esVerdadero) {
 let a: Date = new Date();
 console.log("La fecha es: " + a);
 
- 
 let listaNums: number[] = [1, 2, 3];
 listaNums.push(4);
 
@@ -112,20 +111,15 @@ let numeroBase = 8;
 let numeroAlCuadrado = elevarAlCuadrado(numeroBase);
 console.log(numeroBase + " al cuadrado es igual a " + numeroAlCuadrado);
 
-
 const nombres = ["Juan", "Pedro", "Luis"];
 nombres.forEach(function (s) {
   console.log(s.toUpperCase());
 });
- 
+
 nombres.forEach((s) => {
   console.log(s.toUpperCase());
 });
- 
- 
 
- 
- 
 type Punto = {
   x: number;
   y: number;
@@ -137,11 +131,9 @@ function imprimirCoordenadas(punto: Punto) {
     La coordenada y es: ${punto.y}
     `);
 }
- 
+
 imprimirCoordenadas({ x: 10, y: 25 });
 
- 
- 
 interface Etiqueta {
   label: string;
 }
@@ -153,8 +145,6 @@ function imprimirEtiqueta(etiqueta: Etiqueta) {
 let miEtiqueta = { numero: 10, label: "Esta es mi etiqueta" };
 imprimirEtiqueta(miEtiqueta);
 
- 
- 
 interface Cuadrado {
   color?: string;
   ancho: number;
@@ -164,29 +154,25 @@ function crearCuadrado(cuadrado: Cuadrado): { area: number } {
   const area = cuadrado.ancho * cuadrado.ancho;
   return { area: area };
 }
- 
+
 console.log(crearCuadrado({ ancho: 10 }));
 
- 
 interface Punto2 {
   readonly x: number;
   readonly y: number;
 }
 
 let punto1: Punto2 = { x: 10, y: 20 };
- 
 
 interface Transporte {
   nombre: string;
 }
 
- 
 interface Auto extends Transporte {
   ruedas: number;
 }
 let auto2: Auto;
 
- 
 type Figura = {
   nombre: string;
 };
@@ -195,24 +181,20 @@ type Cuadrado2 = Figura & {
 };
 let cuadrado1: Cuadrado2;
 
- 
-
 function imprimir(estadoCivil: "soltero" | "casado") {
   console.log(estadoCivil);
 }
- 
+
 imprimir("soltero");
 
-
- 
 function saludar4(fn: (a: string) => void) {
   fn("Hola mundo");
 }
 
- 
 function imprimirEnConsola(s: string) {
   console.log(s);
 }
 
- 
 saludar4(imprimirEnConsola);
+
+// Final del archivo

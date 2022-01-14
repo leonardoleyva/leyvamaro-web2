@@ -79,7 +79,7 @@ console.log(saludar2({ nombre: "Elena", edad: 25 }));
 function saludar3(persona) {
     return "\n    **Objeto nombrado como un alias**\n    Hola ".concat(persona.nombre);
 }
-console.log(saludar3({ nombre: "Kevin", edad: 21 }));
+console.log(saludar3({ nombre: "Leonardo", edad: 21 }));
 function imprimir(computador) {
     console.log("SO: ".concat(computador.os));
     console.log("Memoria: ".concat(computador.memoria));

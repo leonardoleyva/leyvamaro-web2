@@ -37,7 +37,7 @@ var Saludo = /** @class */ (function () {
     };
     return Saludo;
 }());
-var miNombre = new Saludo("Kevin");
+var miNombre = new Saludo("Leonardo");
 var Punto2 = /** @class */ (function () {
     function Punto2(xs, y) {
     }

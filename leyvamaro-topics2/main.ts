@@ -113,7 +113,7 @@ function saludar3(persona: Persona2) {
     Hola ${persona.nombre}`;
 }
 
-console.log(saludar3({ nombre: "Kevin", edad: 21 }));
+console.log(saludar3({ nombre: "Leonardo", edad: 21 }));
 
 interface Computadora {
   os: "Windows" | "Linux" | "Mac";

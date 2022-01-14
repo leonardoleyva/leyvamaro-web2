@@ -24,7 +24,7 @@ class Saludo {
   asignarNuevoNombre(nuevoNombre: string) {}
 }
 
-const miNombre = new Saludo("Kevin");
+const miNombre = new Saludo("Leonardo");
 
 class Punto2 {
   constructor(x: number, y: number);
